@@ -1,0 +1,687 @@
+//Карточка товара
+.card_order_wrapp
+    width 950px
+    position fixed
+    top 40px
+    right 0
+    height calc(100% - 40px)
+    transition: .9s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
+    transform: translateX(1050px);
+    z-index 999
+
+
+.card_order__bg
+    width 100%
+    height 100%
+    background rgba(50,55,68,.7)
+    position fixed
+    left 0
+    top 0
+    z-index 100
+    display none
+.card_order
+    width 950px
+    position absolute
+    background rgb(245, 246, 250)
+    z-index 101
+    top 0
+    right 0
+    box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24) 
+    border-radius: 5px 
+    padding 30px 20px
+    //transition: .5s ease;
+    overflow-y auto
+    max-height 100%
+    color #181818
+
+.close
+    position absolute
+    width 25px
+    height 25px
+    display block
+    top: 30px 
+    left: -50px
+    background url("../img/13_card_order/close.png") no-repeat
+    cursor pointer
+    z-index 100
+
+.card_order__header
+    height 50px
+    border-bottom 1px solid #dde0ea
+    margin-bottom 30px
+    color #181818
+    .order_number
+        display inline-block
+        font-size 24px
+        color #181818
+    .order_status
+        float right
+
+.comment_order
+    span
+        margin-right 30px
+    button
+        border 0
+        background 0 0
+        color #b3bad0
+        transition .4s ease
+    .edit
+    .add_new_comm
+        &:hover
+            color #2a8bf2
+    .delete
+        &:hover
+            color #ff0000
+    .comment_order__text
+        width 100%
+        margin-top 25px
+        min-height 35px
+        display none
+        .img_comment
+            width 31px
+            height 30px
+            background url("../img/13_card_order/img_comment.png") no-repeat
+            margin-right 20px
+            float left
+        .comment_text
+            width 850px
+            position relative
+
+        .comment_edit
+            width 100%
+            height 150px
+            position: absolute
+            left: 50px 
+            border-width: 1px 
+            border-color: rgb(142, 153, 186) 
+            border-style: solid 
+            box-shadow: 0 13px 18.8px 1.2px rgba(12, 62, 113, 0.24) 
+            background #f5f6fa
+            display none
+            z-index 9999
+            #comment_edit
+                resize none
+                width 100%
+                height 70px
+                border 0
+                border-bottom 1px solid rgb(221, 224, 234)
+                background #fff
+                padding 25px 20px 10px 20px
+            button
+                border-radius: 20px 
+                height: 40px 
+                color #fff
+                margin 17px
+                transition .4s ease
+                padding 10px 18px
+                font-weight 500
+                font-family "Graphik LC"
+            .confirm
+                background-color: rgb(138, 199, 34) 
+                &:hover
+                    background-color #76ac20
+            .cancel
+                background-color: rgb(179, 186, 208) 
+                &:hover
+                    background-color #8e99ba
+        .comment_edit.open
+            display block
+.card_order_stub
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+    color: #181818;
+    img
+        margin-bottom 20px
+
+
+.goods_in_order_table
+    width 100%
+    background #fff
+    box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24) 
+    border-radius: 5px 
+    max-height: 435px
+    margin-top 25px
+    .goods_in_order_header
+        font-size 24px
+        color #67708a
+        font-weight 500
+        padding 20px
+    .goods_in_order_table__header
+        background rgb(244, 249, 254)
+        height 50px
+        width 100%
+        display table
+        padding-left 20px
+        color: #67708a 
+        >span
+            width 20%
+            display table-cell
+            vertical-align bottom
+            border-right 1px solid rgb(221, 224, 234)
+            padding 5px 10px
+            &:nth-child(1)
+                width 26%
+            &:nth-child(2)
+                width 14%
+        .price
+        .quantity
+            padding 5px 10px
+            span
+                &:first-child
+                    width 100%
+                    text-align center
+                    margin-bottom 10px
+                    display block
+                &:nth-child(2)
+                    display table-cell
+                    padding-right 13px
+                &:nth-child(3)
+                    display table-cell
+.goods_in_order_table_wrapp
+.goods_in_order_table_item_scroll
+    //max-height 300px
+    margin-right 15px
+    border-bottom 1px solid rgb(221, 224, 234)
+
+.goods_in_order_table_item_scroll
+    max-height 300px
+
+.goods_in_order_table_wrapp.items
+    margin-right 0
+
+.goods_in_order_table_item
+    color #181818
+    display table
+    width 100%
+    padding-left 20px
+    height 50px
+    border-bottom 1px solid rgb(221, 224, 234)
+    >span
+        display table-cell
+        width 20%
+        padding 5px 10px
+        border-right 1px solid rgb(221, 224, 234)
+        vertical-align middle
+        &:nth-child(1)
+            width 26%
+        &:nth-child(2)
+            width 14%
+        span
+            display inline-block
+            width 48%
+        a.edit
+            float right
+            background url("../img/13_card_order/img_edit.png") no-repeat
+            width 21px
+            height 20px
+        a.delete
+            float right
+            background url("../img/13_card_order/img_delete.png") no-repeat
+            width 21px
+            height 20px
+            margin-left 10px
+
+.delivery_options_wrapp
+    width: 100% 
+    background: #fff 
+    box-shadow: 0 3px 4.7px 0.3px rgba(3,39,75,.24) 
+    border-radius: 5px 
+    margin-top: 25px
+    .delivery_options_header
+        font-size: 24px 
+        color: #67708a 
+        font-weight: 500 
+        padding: 20px
+    .stock_whence
+        font-size 24px
+        color: #67708a
+        font-weight 500
+        padding 20px 20px 0 20px
+        .img_whence
+            width 28px
+            height 24px
+            display inline-block
+            background url("../img/13_card_order/img_whence.png") no-repeat
+        div
+            display inline-block
+    .stock_where
+        font-size 18px
+        color: #67708a
+        font-weight 500
+        padding 0 20px
+        .img_where
+            width 32px
+            height 24px
+            display inline-block
+            background url("../img/13_card_order/img_where.png") no-repeat
+        div
+            display inline-block
+.change_selection
+    float right
+    color #2a8bf2
+    padding-top 7px
+    font-size 15px
+    font-weight 300
+
+.delivery_table
+    width 100%
+    padding-top 20px
+    .delivery_table__header
+        width 100%
+        display table
+        span
+            display table-cell
+            width 25%
+            background rgb(244, 249, 254)
+            height 30px
+            vertical-align middle
+            padding 0 20px
+            border-right 1px solid rgb(221, 224, 234)
+            &:last-child
+                border-right 0
+
+    .delivery_table_item
+        width 100%
+        display table
+        color #181818
+        span
+            display table-cell
+            width 25%
+            vertical-align middle
+            padding 15px 15px
+            border-right 1px solid rgb(221, 224, 234)
+            border-bottom 1px solid rgb(221, 224, 234)
+            &:last-child
+                border-right 0
+
+.order_documents_total_order_wrapp
+    margin-top 25px
+    width 100%
+    display inline-block
+    .order_documents
+        background #fff
+        width 49%
+        display block
+        float left
+        padding 25px 0
+        box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24) 
+        border-radius 5px
+        height 255px
+        .order_documents__header
+            font-size 24px
+            font-weight 500
+            color #67708a
+            margin-bottom 25px
+            padding 0 20px
+        .document_item
+            font-size 14px
+            height: 40px
+            padding: 14px 20px
+            transition .4s ease
+            &:hover
+                background rgb(244, 249, 254)
+                a
+                    opacity 1
+            a
+                transition .4s ease
+                float right
+                margin-left 8px
+                opacity 0
+    .total_order
+        background #fff
+        width 49%
+        display block
+        float right
+        padding 25px 20px
+        box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24) 
+        border-radius 5px
+        height 255px
+        .total_order_header
+            font-size 24px
+            font-weight 500
+            color #85ba56
+        >span
+            font-size 12px
+            color #181818
+
+.document_item
+    >span
+        width: 335px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: inline-block;
+        white-space: nowrap;
+
+.document_item_block
+    display block
+
+.no_document
+    text-align center
+    font-size 18px
+    color #67708a
+    padding 35px
+    display none
+
+.total_summ_block
+    margin-top 25px
+    border-bottom 1px solid rgb(221, 224, 234)
+    div
+        height 25px
+        font-size 14px
+        >span
+            width 245px
+            float right
+            font-size 18px
+    .total_quantity
+        margin-top 15px
+        padding-bottom 10px
+
+.total_order.order_stage
+    background #fff
+    width 100%
+    display block
+    padding 25px 20px
+    box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24)
+    border-radius 5px
+    height 255px
+    div
+        height 25px
+        font-size 14px
+        >span
+            width 155px
+            float right
+            font-size 18px
+    .total_summ_block
+        width 330px
+        border 0
+        float left
+    .info_block
+        width: 501px;
+        height: 159px;
+        border-width: 1px;
+        border-color: rgb(133, 186, 86);
+        border-style: solid;
+        border-radius: 5px;
+        background-color: rgb(244, 249, 254);
+        float right
+        padding 20px
+        span
+            width 100%
+            font-size 15px
+        p
+            margin-bottom 0
+            a
+                color #2a8bf2
+
+
+
+.car_occupancy_wrapp
+    margin-top 25px
+    border-radius: 5px 
+    background-color: rgb(255, 255, 255) 
+    box-shadow: 0px 3px 4.7px 0.3px rgba(3, 39, 75, 0.24) 
+    //height: 168px
+    width: 100%
+    padding 25px 20px
+    .car_occupancy__header
+        font-size 18px
+        font-weight 500
+        color: #67708a
+        margin-bottom: 15px
+    .car_model
+        margin-bottom: 15px
+    .car_model__select
+        margin-bottom: 15px
+        position relative
+        height 30px
+    .scale
+        width 100%
+        border 1px solid rgb(142, 153, 186)
+        border-radius 15px
+        height 25px
+        margin-top 5px
+        padding 4px
+        text-align center
+        position relative
+        z-index 0
+        .red
+            border-radius 15px
+            height 15px
+            background #ff0000
+            width 100%
+            //max-width 99%
+            //position absolute
+            //z-index -1
+            //top: 0
+            //bottom 0
+            //margin auto
+        .red.green
+            background #85ba56
+        span
+            position absolute
+
+.card_order_cancellation__btn
+    margin 30px 0
+    display none
+    button
+        border-radius: 20px 
+        height: 40px 
+        color: #fff 
+        margin: 17px 
+        transition: .4s ease 
+        padding: 10px 18px 
+        font-weight: 500 
+        font-family: "Graphik LC" 
+        border: 0 
+        background: 0 0 
+        text-transform uppercase
+        font-size 12px
+    >.cancellation
+        background-color: rgb(250, 98, 57) 
+        margin: 0 auto 
+        display: block 
+        &:hover
+            background-color: rgb(200, 79, 46) 
+
+.card_order_btn
+    margin 30px 0
+    button
+        border-radius: 20px 
+        height: 40px 
+        color: #fff 
+        margin: 15px 20px 15px 0 
+        transition: .4s ease 
+        padding: 10px 18px 
+        font-weight: 500 
+        font-family: "Graphik LC" 
+        border: 0 
+        background: 0 0 
+        text-transform uppercase
+        font-size 12px
+    .delete_draft
+        background #b3bad0
+        &:hover
+            background rgb(142, 153, 186)
+    .continue_order
+    .add_comment
+        background #2a8bf2
+        &:hover
+            background rgb(30, 112, 198)
+    .confirm_order
+        background #8ac722
+        &:hover
+            background rgb(125, 182, 33)
+
+.confirm_order[disabled]
+    background rgba(179, 186, 208, 0.5);
+    cursor default
+    &:hover
+        background rgba(179, 186, 208, 0.5);
+
+
+
+.card_order_recent_actions
+    background #fff
+    box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24) 
+    border-radius: 5px
+    height 450px
+    .card_order_recent_actions__header
+        font-size 24px
+        color #67708a
+        font-weight 500
+        padding 25px 20px
+
+.card_order_recent_actions_table_wrapp
+    //border-right 1px solid #dde0ea;
+    margin-right 15px
+
+.warning_bg
+    width: 100%;
+    height: 100%;
+    background: rgba(50,55,68,.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index 999
+    display none
+.warning_del
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+    width: 554px;
+    height: 208px;
+    position: absolute;
+    top 0
+    bottom 0
+    margin auto
+    //left 0
+    right 198px
+    z-index 1000
+    display none
+    padding 60px 40px
+    text-align center
+    span
+        font-size 24px
+    button
+        border-radius: 20px;
+        height: 40px;
+        color: #fff;
+        margin: 30px 5px;
+        transition: .4s ease;
+        padding: 10px 18px;
+        font-weight: 500;
+        font-family: "Graphik LC";
+        background #b3bad0
+        border 0
+    .confirm_del
+        background #8ac722
+
+.warning_confirm
+.warning_annulment
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+    width: 891px;
+    height: 355px;
+    position: absolute;
+    top 0
+    bottom 0
+    right 38px
+    margin auto
+    z-index 1000
+    display none
+    .order_number
+        font-size: 24px;
+        color: #67708a;
+        text-align left
+        width 100%
+        padding 30px 20px 10px
+        span
+            font-size 12px
+            float right
+            width 315px
+            margin-right 55px
+            a
+                color #2a8bf2
+    p
+        padding 0 20px
+        color #181818
+
+    textarea
+        width 100%
+        height 160px
+        resize none
+        border 0
+        border-top 1px solid rgb(221, 224, 234)
+        //border-bottom 1px solid rgb(221, 224, 234)
+        padding 20px
+    .warning_confirm__block_btn
+        height: 77px;
+        border-top: 1px solid #dde0ea;
+        padding 0 15px
+        background rgb(245, 246, 250)
+        button
+            border-radius: 20px;
+            height: 40px;
+            color: #fff;
+            margin: 18px 5px;
+            transition: .4s ease;
+            padding: 10px 18px;
+            font-weight: 500;
+            font-family: "Graphik LC";
+            background #b3bad0
+            border 0
+            font-size 12px
+        .confirm_confirm
+        .confirm_annulment
+            background #8ac722
+        span
+            float right
+            width 520px
+            margin 18px 30px 0
+            a
+                color #2a8bf2
+
+
+.warning_annulment.index //что б по центру было на главной было
+    left 0
+    right 0
+    margin auto
+
+/*-------------- radio*/
+.car_model__select .radio {
+    vertical-align: top;
+    width: 17px;
+    height: 17px;
+    margin: 0 3px 0 0;
+}
+.car_model__select .radio + label {
+    cursor: pointer;
+}
+.car_model__select .radio:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.car_model__select .radio:not(checked) + label {
+    position: relative;
+    border-width: 1px;
+    border-color: rgb(225, 226, 229);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+    height: 31px;
+    border-radius 20px
+    padding: 7px 13px;
+    font-size 14px
+    color #07080b
+    top: 6px;
+    margin-right: 10px;
+}
+.car_model__select .radio:checked + label {
+    position: relative;
+    background-color: rgb(246, 206, 13);
+    box-shadow: inset 0 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+}
+
+/*-------------- radio*/

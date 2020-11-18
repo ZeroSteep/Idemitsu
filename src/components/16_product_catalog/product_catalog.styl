@@ -1,0 +1,393 @@
+.product_catalog_wrapp
+    margin-bottom: 40px;
+    .product_catalog__header
+        font-size: 36px;
+        color: #67708a;
+
+.header_search_new_order.product_catalog_search
+    display inline-block
+    width: calc(100% - 500px)
+    padding: 0 10px;
+    margin 0 10px
+    background #fff
+    box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24);
+    form
+        position relative
+        //height: 45px;
+        //padding 10px 0
+        input.search__new_order
+            border 0
+            border-bottom 1px solid #e1e2e5
+            text-indent 30px
+            width 100%
+            max-width 545px
+            placeholder font-size 15px color #8e99ba font-family "Graphik LC" font-weight 300
+            height 30px
+            text-overflow: ellipsis;
+            font-family: "Graphik LC";
+            font-weight: 300;
+        input.btn_search
+            background url("../img/14_new_order/search.png") center no-repeat
+            width: 20px;
+            height: 20px;
+        .documents__list_filter_item
+            margin 0 30px
+    .header__search_result__new_order
+        width 545px
+        top 40px
+
+
+
+.product_list_wrapp.product_catalog_list_wrapp
+    background #fff
+    width: calc(100% - 500px)
+    margin 0 10px
+    margin-top 10px
+    display inline-block
+.product_list__header
+    font-size 24px
+    font-weight 500
+    padding 25px 20px 20px
+.product_list__stub
+    text-align center
+    margin 150px 0
+    display none
+    span
+        display block
+        text-align center
+        font-size 18px
+        line-height: 1.7
+        a
+            color #2a8bf2
+
+
+.product_list_wrapp.product_catalog_list_wrapp
+    .product_list_table
+        width 100%
+        background #fff
+        box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24)
+        border-radius: 5px
+        .product_list_table__header
+            background rgb(244, 249, 254)
+            height 30px
+            width 100%
+            display table
+            color: #67708a
+            >span
+                display inline-block
+                float left
+                border-right 1px solid rgb(221, 224, 234)
+                padding 9px
+                font-size 13px
+                height inherit
+                &:nth-child(1)
+                    width 10%
+                &:nth-child(2)
+                    width 30%
+                &:nth-child(3)
+                    width 23%
+                &:nth-child(4)
+                    width 14%
+                &:nth-child(5)
+                    width 13%
+                &:last-child
+                    width 10%
+                    border-right 0
+
+    .product_list_table_item_hover
+        display: block;
+        transition: .4s ease;
+        &:hover
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 7px 18.8px 1.2px rgba(0,82,165,.18);
+            transform: scale(1.01,1.02);
+    .product_list_table_item
+        color #181818
+        display table
+        width 100%
+        height 80px
+        border-bottom 1px solid rgb(221, 224, 234)
+        >span
+            display inline-block
+            float left
+            padding 17px 10px
+            border-right 1px solid rgb(221, 224, 234)
+            font-size 14px
+            height inherit
+            &:nth-child(1)
+                width 10%
+                text-align center
+                padding 0
+                img
+                    height 70px
+            &:nth-child(2)
+                width 30%
+            &:nth-child(3)
+                width 23%
+            &:nth-child(4)
+                width 14%
+            &:nth-child(5)
+                width 13%
+            &:last-child
+                width 10%
+                border-right 0
+                text-align center
+            >a
+                float none
+                margin-left 0
+                width 20px
+                height 20px
+                opacity 1
+                transition: .4s ease;
+                display inline-block
+            .product_list_add
+                background url("../img/14_new_order/img_product_list_transition.png") no-repeat
+
+    .product_list_table_wrapp
+        padding-bottom 20px
+
+.info_help_block
+    width 255px
+    position absolute
+    right 10px
+    top 218px
+    //height: 511px;
+    border-width: 1px;
+    border-color: rgb(103, 112, 138);
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(244, 249, 254);
+    box-shadow: 0 13px 18.8px 1.2px rgba(3, 39, 75, 0.24);
+    padding 20px
+    .info_help_header
+        font-size 24px
+        font-weight 500
+        margin-bottom 20px
+    a.new_orders
+        text-align center
+        font-size 12px
+        font-weight 500
+        color #fff
+        background #8ac722
+        border-radius 20px
+        display block
+        width: 128px;
+        margin 20px auto
+        padding 14px
+    span
+        display block
+        color #181818
+    .PDF
+        display inline-block
+        background url("../img/16_product_catalog/img_PDF.png") no-repeat
+        width 34px
+        height 36px
+        margin-top: 10px;
+        margin-right: 20px;
+    .XLS
+        display inline-block
+        background url("../img/16_product_catalog/img_XLS.png") no-repeat
+        width 34px
+        height 36px
+        margin-top: 10px;
+        margin-right: 20px;
+    hr
+        border: none; /* Убираем границу для браузера Firefox */
+        color: rgb(103, 112, 138); /* Цвет линии для остальных браузеров */
+        background-color: rgb(103, 112, 138); /* Цвет линии для браузера Firefox и Opera */
+        height: 1px; /* Толщина линии */
+        margin 30px 0
+
+
+//---breadcrumb-------
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+    color #b3bad0
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    text-decoration: none;
+    color #2a8bf2
+}
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+//-------------------------
+
+.product_card_wrapp
+    width: calc(100% - 260px)
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24);
+    padding 25px 20px
+    display table
+    .product_card__img_block
+        margin-right 25px
+        //display table-cell
+        border-width: 1px;
+        border-color: rgb(221, 224, 234);
+        border-style: solid;
+        max-width: 362px;
+        width: 100%;
+        //height: 278px;
+        text-align center
+        float left
+        a[data-fancybox]
+            img
+                max-width 200px
+.product_description
+    display: table-cell
+    width: 72%;
+    padding 0 20px
+    padding-right 0
+    vertical-align top
+    a.backward
+        float right
+        border-radius: 20px;
+        background-color: rgb(42, 139, 242);
+        //width: 288px;
+        height: 41px;
+        color #fff
+        padding 15px 20px
+        font-size 12px
+
+    .product_description__header
+        font-size 32px
+        margin-bottom 15px
+        display inline-block
+    .product_description__text
+        line-height 22px
+        color #181818
+        display inline-block
+        p
+            max-width 830px
+            display inline-block
+        .add_description
+            display block
+            line-height 30px
+            color #181818
+            span
+                &:first-child
+                    display inline-block
+                    width 115px
+                &:last-child
+                    display inline-block
+                    color #181818
+        .technical_description
+        .MSDS
+            color #2a8bf2
+            position relative
+            padding-left 30px
+            margin-right 50px
+            margin-top 25px
+            display inline-block
+            &:before
+                content ''
+                position absolute
+                background url("../img/16_product_catalog/img_description.png") no-repeat
+                width 20px
+                height 20px
+                left 0
+
+.showing_wrapp
+    //max-width: 1340px;
+    width: calc(100% - 260px);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24);
+    padding 25px 20px
+    margin-top 10px
+    .showing__header
+        font-size 24px
+        display inline-block
+        color #181818
+    .showing__table
+        width 800px
+        .showing__table_header
+        .showing__table_item
+            display table
+            width 100%
+            span
+                display inline-block
+                vertical-align middle
+                &:nth-child(1)
+                    width 35%
+                &:nth-child(2)
+                    width 15%
+                &:nth-child(3)
+                    width 25%
+                &:nth-child(4)
+                    width 25%
+        .showing__table_header
+            margin-bottom 25px
+        .showing__table_item
+            margin-bottom 15px
+            color #181818
+        .showing__table_item
+            span
+                &:nth-child(2)
+                    color #181818
+                &:nth-child(3)
+                    color #181818
+                &:nth-child(4)
+                    color #181818
+
+
+.props-detail
+    table
+        >*
+            border 0
+    table
+        max-width: 800px;
+        width: 100%;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        padding 25px 0
+        margin-top 10px
+        border 0
+        color: #181818;
+.props-detail table tr:first-child td {
+    font-weight 500
+    color: #67708a
+}
+.props-detail table *{
+    font-weight: 300;
+    border: 0;
+    line-height 30px
+}
+
+
+.preview_img_block
+    .preview_img_item
+        height 95px
+        border-top 1px solid #dde0ea
+        border-right 1px solid #dde0ea
+        img
+            max-height: 100%;
+            min-height: 100%;
+            height: 100%;
+    .preview_img_item.last
+        border-right 0 solid #dde0ea
+
+
+
+
+        .Фигура_1_копия_5 {
+            background-color: #dde0ea
+            position: absolute;
+            left: 148px;
+            top: 209px;
+            width: 618px;
+            height: 1px;
+            z-index: 4;
+        }

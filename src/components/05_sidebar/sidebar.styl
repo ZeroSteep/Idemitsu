@@ -1,0 +1,254 @@
+.sidebar_menu
+    background-color: rgb(255, 255, 255)
+    box-shadow: 0 28px 37.6px 2.4px rgba(0, 0, 0, 0.24)
+    position: fixed
+    width: 160px
+    display block
+    height 100%
+    left 0
+    top 0
+    padding 20px 0
+    //z-index 1
+
+.logo
+    a
+        background url(../img/05_sidebar/logo.png) no-repeat
+        display block
+        width 74px
+        height 88px
+        margin auto
+
+.orders
+    margin 70px 0
+    position relative
+    a
+        display block
+        width 100%
+        height 58px
+        margin auto
+        text-align center
+        padding-top 68px
+        transition .8s ease
+        color #181818
+        position relative
+        &:after
+            content ''
+            position absolute
+            width 100%
+            height 58px
+            top 0
+            left 0
+            background url(../img/05_sidebar/orders.png) top center no-repeat
+            opacity 1
+            visibility visible
+            transition .5s ease
+        &:before
+            content ''
+            position absolute
+            width 100%
+            height 58px
+            top 0
+            left 0
+            background url(../img/05_sidebar/orders_hover_active.png) top center no-repeat
+            opacity 0
+            visibility hidden
+            transition .5s ease
+        span
+            display block
+            transition .6s ease
+        &:hover
+            &:after
+                opacity 0
+                visibility hidden
+            &:before
+                opacity 1
+                visibility visible
+            >span
+                color #e25b23
+    .active
+        background url(../img/05_sidebar/orders_hover_active.png) top center no-repeat
+        >span
+            color #e25b23
+        &:after
+            opacity 0
+.documents
+    margin-top 100px
+    position relative
+    a
+        display block
+        width 100%
+        height 58px
+        margin auto
+        text-align center
+        padding-top 68px
+        transition .8s ease
+        color #181818
+        position relative
+        &:after
+            content ''
+            position absolute
+            width 100%
+            height 58px
+            top 0
+            left 0
+            background url(../img/05_sidebar/documentation.png) top center no-repeat
+            opacity 1
+            visibility visible
+            transition .5s ease
+        &:before
+            content ''
+            position absolute
+            width 100%
+            height 58px
+            top 0
+            left 0
+            background url(../img/05_sidebar/documentation_hover_active.png) top center no-repeat
+            opacity 0
+            visibility hidden
+            transition .5s ease
+        span
+            display block
+            transition .6s ease
+        &:hover
+            &:after
+                opacity 0
+                visibility hidden
+            &:before
+                opacity 1
+                visibility visible
+            >span
+                color #e25b23
+    .active
+        background url(../img/05_sidebar/documentation_hover_active.png) top center no-repeat
+        >span
+            color #e25b23
+        &:after
+            opacity 0
+
+
+.new_orders
+    margin-top 100px
+    a
+        display block
+        width 100%
+        height 59px
+        margin auto
+        text-align center
+        padding-top 69px
+        transition .8s ease
+        color #181818
+        position relative
+        &:after
+            content ''
+            position absolute
+            width 100%
+            height 58px
+            top 0
+            left 0
+            background url(../img/05_sidebar/new_orders.png) top center no-repeat
+            opacity 1
+            visibility visible
+            transition .5s ease
+        &:before
+            content ''
+            position absolute
+            width 100%
+            height 58px
+            top 0
+            left 0
+            background url(../img/05_sidebar/new_orders_hover_active.png) top center no-repeat
+            opacity 0
+            visibility hidden
+            transition .5s ease
+        span
+            display block
+            transition .6s ease
+        &:hover
+            &:after
+                opacity 0
+                visibility hidden
+            &:before
+                opacity 1
+                visibility visible
+            >span
+                color #e25b23
+    .active
+         background url(../img/05_sidebar/new_orders_hover_active.png) top center no-repeat
+         >span
+            color #e25b23
+         &:after
+            opacity 0
+
+.catalog
+    margin-top 100px
+    a
+        display block
+        width 100%
+        height 44px
+        margin auto
+        text-align center
+        padding-top 55px
+        transition .8s ease
+        position relative
+        &:after
+            content ''
+            position absolute
+            width 100%
+            height 58px
+            top 0
+            left 0
+            background url(../img/05_sidebar/catalog.png) top center no-repeat
+            opacity 1
+            visibility visible
+            transition .5s ease
+        &:before
+            content ''
+            position absolute
+            width 100%
+            height 58px
+            top 0
+            left 0
+            background url(../img/05_sidebar/catalog_hover_active.png) top center no-repeat
+            opacity 0
+            visibility hidden
+            transition .5s ease
+        span
+            display block
+            transition .6s ease
+        &:hover
+            &:after
+                opacity 0
+                visibility hidden
+            &:before
+                opacity 1
+                visibility visible
+            >span
+                color #e00b25
+    .active
+        background url(../img/05_sidebar/catalog_hover_active.png) top center no-repeat
+        >span
+            color #e00b25
+        &:after
+            opacity 0
+
+.indicator
+    position absolute
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    width: 31px;
+    height: 31px;
+    top: -10px;
+    right: 24%;
+    opacity 0
+    z-index 1
+    >span
+        position absolute
+        left 0
+        right 0
+        color #fff
+        font-size 14px
+        text-align center
+        line-height 32px
+.indicator.new
+    opacity 1
+

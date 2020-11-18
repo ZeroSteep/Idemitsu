@@ -1,0 +1,65 @@
+.catalog_header
+    font-size 36px
+    margin 0 0 40px
+.tile__item
+    border 1px solid transparent
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+    max-width: 465px;
+    width 47%
+    min-width 350px
+    height: 238px;
+    display block
+    float left
+    margin 0 20px 20px 0
+    position relative
+    transition .4s ease
+    img.hover
+        opacity 0px
+        visibility hidden
+    img
+    img.hover
+        position absolute
+        top -30px
+        left 0
+        right 0
+        bottom 0
+        margin auto
+        transition .4s ease
+    span
+        position absolute
+        top 67%
+        left 0
+        right 0
+        bottom 0
+        margin auto
+        color #181818
+        font-size 28px
+        text-align center
+        transition .4s ease
+    &:hover
+        box-shadow: 0 13px 18.8px 1.2px rgba(0, 82, 165, 0.24);
+        border-color #e25023
+        span
+            color #ff0000
+        img
+            opacity 0
+            visibility hidden
+        img.hover
+            opacity 1
+            visibility visible
+
+.Прямоугольник_5 {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 13px 18.8px 1.2px rgba(0, 82, 165, 0.24);
+    position: absolute;
+    left: 180px;
+    top: 247px;
+    width: 463px;
+    height: 236px;
+    z-index: 105;
+}

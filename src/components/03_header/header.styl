@@ -1,0 +1,483 @@
+header
+    height 120px
+    display table
+    width 100%
+    position relative
+    background #fff
+
+//блок поиска-----------------
+//вариант поиска для малых разрешений в шапке
+
+//border: 0;
+//background: url(../img/03_header/img_search.png) center no-repeat;
+//width: 26px;
+//height: 26px;
+//position: absolute;
+//left: 6px;
+//top: 130px;
+//bottom: 0;
+//margin: auto;
+//z-index: 1;
+
+.header_search
+.header_search_new_order
+    padding 0 30px
+    width 35%
+    min-width 105px
+    vertical-align middle
+    display table-cell
+    position relative
+    form
+        position relative
+        .search__new_order
+        input.search
+            border 0
+            border-bottom 1px solid #e1e2e5
+            text-indent 40px
+            width 100%
+            max-width 420px
+            placeholder font-size 20px color #8e99ba font-family "Graphik LC" font-weight 300
+            height 45px
+            text-overflow: ellipsis;
+            font-family: "Graphik LC";
+            font-weight: 300;
+        input.btn_search
+            border 0
+            background url("../img/03_header/img_search.png") center no-repeat
+            width 26px
+            height 26px
+            position absolute
+            left 0
+            top 0
+            bottom 0
+            margin auto
+.header__search_result__new_order
+.header__search_result
+    position absolute
+    padding 0 20px 30px
+    background #fff
+    width: 92%
+    border 1px solid rgb(225, 226, 229)
+    border-top 1px solid rgb(103, 112, 138)
+    box-shadow: 0 13px 18.8px 1.2px rgba(0, 82, 165, 0.18)
+    display none
+    z-index 99
+    min-width 545px
+    ul.search_result
+    ul.search_result_new_order
+        padding 0
+        margin 0
+        li.search_result_section
+            text-transform uppercase
+            font-family "Graphik LC"
+            font-weight 500
+            font-size 15px
+            color #67708a
+            padding-top 25px
+            padding-bottom 15px
+        li
+            list-style none
+            a
+                display block
+                line-height 2
+                color #181818
+                span.bold
+                    font-family "Graphik LC"
+                    font-weight 500
+
+        .all_result
+            border 1px solid rgb(142, 153, 186)
+            height: 28px
+            width 285px
+            display: block
+            margin: 20px auto 0
+            border-radius: 12px
+            //padding: 0 25px
+            text-align center
+            line-height: 28px
+            transition .4s ease
+            background -moz-linear-gradient( 0deg, rgb(226,92,35) 0%, rgb(223,3,38) 100%);
+            background -webkit-linear-gradient( 0deg, rgb(226,92,35) 0%, rgb(223,3,38) 100%);
+            background -ms-linear-gradient( 0deg, rgb(226,92,35) 0%, rgb(223,3,38) 100%);
+            background -o-linear-gradient( 0deg, rgb(226,92,35) 0%, rgb(223,3,38) 100%);
+            background linear-gradient( 0deg, rgb(226,92,35) 0%, rgb(223,3,38) 100%);
+            &:hover
+                border 1px solid transparent
+            span
+                padding 1px
+                background #fff
+                border-radius 11px
+                display block
+                width 100%
+                height 100%
+                transition .4s ease
+                &:hover
+                    color #df0326
+
+
+
+//блок баланса--------------------
+.balance__credit
+    .credit
+    a
+        font-size 18px
+        display block
+        background url("../img/03_header/img_credit.png") left no-repeat
+        //width 220px
+        height 28px
+        padding-left: 45px;
+        padding-top: 5px;
+        transition .8s ease
+        //&:hover
+        //    background url("../img/03_header/img_credit_hover.png") left no-repeat
+
+.balance__history
+    a
+        font-size 18px
+        display block
+        //background url("../img/03_header/img_history__operations.png") left no-repeat
+        height 28px
+        padding-left: 45px;
+        padding-top: 5px;
+        position relative
+        color: #181818;
+        &:after
+            content ''
+            height 28px
+            background url("../img/03_header/img_history__operations.png") left no-repeat
+            position absolute
+            width: 30px;
+            left: 0;
+            top: 0;
+            transition .8s ease
+        &:before
+            content ''
+            height 28px
+            background url("../img/03_header/img_history__operations_hover.png") left no-repeat
+            position absolute
+            width: 30px;
+            left: 0;
+            top: 0;
+            opacity 0
+            transition .8s ease
+        &:hover
+            &:after
+                opacity 0
+            &:before
+                opacity 1
+
+
+.balance_wrapper
+    display table-cell
+    height 100%
+    border-left 1px solid #e1e2e5
+    padding 0 20px
+    vertical-align middle
+    width 17.4%
+    min-width 290px
+    .summ
+        font-size 18px
+        font-family "Graphik LC"
+        font-weight 500
+        padding-left 45px
+
+
+.user_wrapper
+    display table-cell
+    height 100%
+    border-left 1px solid #e1e2e5
+    padding 0 20px
+    vertical-align middle
+    width 29%
+    min-width 475px
+
+    .user__ava
+        width 80px
+        height 80px
+        border-radius 50%
+        float left
+        margin-right 20px
+        background url("../img/15_user_profile/no_ava__header.png") center no-repeat
+        background-size cover
+        border 1px solid #ddd
+    .user__company
+        font-size 18px
+        color #67708a
+        display block
+        margin-top 18px
+        transition .4s ease
+    .user__contract
+        font-size 18px
+        line-height 1
+        color #67708a
+        display block
+        margin-top 6px
+        transition .4s ease
+    &:hover
+        .user__contract
+        .user__company
+            color #2a8bf2
+            text-decoration none
+
+.notifications_block_wrapper
+    display table-cell
+    height 100%
+    border-left 1px solid #e1e2e5
+    padding 0 20px
+    vertical-align middle
+    text-align center
+    width 20%
+    min-width 310px
+    .notifications__new_wrapp
+        width 28px
+        height 100%
+        display inline-block
+        position relative
+        transition .8s ease
+        text-align center
+        .notifications__new
+            width 28px
+            height 100%
+            //background url("../img/03_header/img_notifications.png") center no-repeat
+            display inline-block
+            position relative
+            transition .8s ease
+            margin auto
+            &:after
+                content ''
+                position absolute
+                width 28px
+                height 100%
+                display inline-block
+                transition .8s ease
+                background url("../img/03_header/img_notifications.png") center no-repeat
+                left 0
+            &:before
+                content ''
+                position absolute
+                width 28px
+                height 100%
+                display inline-block
+                transition .8s ease
+                background url("../img/03_header/img_notifications_hover.png") center no-repeat
+                left: 0
+                opacity 0
+            &:hover
+                &:after
+                     opacity 0
+                &:before
+                     opacity 1
+            .indicator
+                position absolute
+                border-radius: 50%;
+                background-color: rgb(223, 3, 38);
+                width: 14px;
+                height: 14px;
+                top: 37%;
+                right: -2%;
+                opacity 0
+            .indicator.new
+                opacity 1
+    .notifications__dogovor
+        position relative
+        display inline-block
+        height 100%
+        width 28px
+        margin-left 40px
+        transition .8s ease
+        &:after
+            content ''
+            position absolute
+            width 28px
+            height 100%
+            display inline-block
+            transition .8s ease
+            background url("../img/03_header/img_notifications__dogovor.png")center no-repeat
+            left 0
+        &:before
+            content ''
+            position absolute
+            width 28px
+            height 100%
+            display inline-block
+            transition .8s ease
+            background url("../img/03_header/img_notifications__dogovor_hover.png") center no-repeat
+            left: 0
+            opacity 0
+        &:hover
+            &:after
+                opacity 0
+            &:before
+                opacity 1
+    .notifications__exit
+        position relative
+        width 37px
+        height 100%
+        display inline-block
+        margin-left 40px
+        transition .8s ease
+        &:after
+            content ''
+            position absolute
+            width 37px
+            height 100%
+            display inline-block
+            transition .8s ease
+            background url("../img/03_header/img_notifications__exit.png")center no-repeat
+            left 0
+        &:before
+            content ''
+            position absolute
+            width 37px
+            height 100%
+            display inline-block
+            transition .8s ease
+            background url("../img/03_header/img_notifications__exit_hover.png") center no-repeat
+            left: 0
+            opacity 0
+        &:hover
+            &:after
+                opacity 0
+            &:before
+                opacity 1
+    .notifications__FAQ
+        position relative
+        display inline-block
+        margin-left 40px
+        width 37px
+        height 100%
+        transition .8s ease
+        &:after
+            content ''
+            position absolute
+            width 37px
+            height 100%
+            display inline-block
+            transition .8s ease
+            background url("../img/03_header/img_notifications__FAQ.png")center no-repeat
+            left 0
+        &:before
+            content ''
+            position absolute
+            width 37px
+            height 100%
+            display inline-block
+            transition .8s ease
+            background url("../img/03_header/img_notifications__FAQ_hover.png") center no-repeat
+            left: 0
+            opacity 0
+        &:hover
+            &:after
+                opacity 0
+            &:before
+                opacity 1
+
+.notifications_block_wrapper
+    a
+        .prompt
+            position absolute
+            bottom 0
+            display block
+            border 1px solid rgb(245, 246, 250);
+            background-color: rgb(255, 255, 255);
+            //box-shadow: 0 13px 18.8px 1.2px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 13px 18.8px 1.2px rgba(0,82,165,.18);
+            padding: 10px 20px;
+            border-radius: 15px;
+            white-space nowrap
+            text-align left
+            font-size: 14px;
+            transition .6s ease
+            visibility hidden
+            opacity 0
+        &:hover
+            .prompt
+                color #e00b25
+                visibility visible
+                opacity 1
+    .notifications__new
+        .prompt
+            left -45px
+    .notifications__dogovor
+        .prompt
+            left: -56px;
+            //bottom: -16px;
+    .notifications__exit
+        .prompt
+            left: -25px;
+    .notifications__FAQ
+        .prompt
+            left: -32px;
+.notifications__last_change_wrapp
+    position: absolute;
+    display: none;
+    background: #fff;
+    width: 395px;
+    //overflow-y: scroll;
+    right: -183px;
+    text-align left
+    box-shadow: 0 13px 18.8px 1.2px rgba(0, 82, 165, 0.18)
+    border 1px solid rgb(225, 226, 229)
+    top: 100px;
+    transition .5s ease
+    z-index: 1;
+    &:before
+        content: '';
+        width: 20px;
+        height: 20px;
+        display: block;
+        top: -11px;
+        margin: auto;
+        left: 0;
+        position: absolute;
+        right: 0;
+        background #fff
+        transform: rotate(45deg);
+        box-shadow: inset 2px 2px 0 -1px #e1e2e5
+    .notifications__last_change
+        max-height 600px
+        overflow-y scroll
+        border-bottom: 2px solid #e1e2e5;
+    .all_result
+        margin: 20px auto;
+        width: 310px;
+        display: block;
+.last_change__item
+    border-right 1px solid #e1e2e5
+    border-bottom 1px solid #8e99ba
+    padding 20px 0 15px 20px
+    color: #67708a
+    line-height 25px
+    margin-right 13px
+    &:last-child
+        border-bottom 0
+    p
+        margin 0
+        padding-top 0
+        a
+            color #2a8bf2
+            &:hover
+                border-bottom 1px solid #2a8bf2
+    .download_btn
+    .print_btn
+        display inline-block
+        margin 8px 0
+        width 40px
+
+.date_wrapp
+    display: block;
+    text-align: left;
+    >div
+        display inline-block
+        font-size 14px
+    .date
+        margin 0 20px 0 10px
+
+
+.print_btn
+    background url('../img/02_all/print_btn.png') no-repeat
+    width 20px
+    height 20px
+    display block
+
+

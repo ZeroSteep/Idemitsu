@@ -1,0 +1,223 @@
+.FAQ_wrapp
+    width 100%
+    background #fff
+    border-radius: 5px;
+    box-shadow: 0px 3px 4.7px 0.3px rgba(3, 39, 75, 0.24);
+    padding 30px 20px
+    .FAQ_header
+        font-size 36px
+        background #fff
+        margin-bottom 40px
+    .FAQ_nav
+        padding 0
+        margin 0
+        li
+            list-style none
+            a
+                font-size 20px
+                font-weight 500
+                line-height 40px
+                color #181818
+                transition .4s ease
+                &:hover
+                    color #2a8bf2
+            a.active
+                color #2a8bf2
+.FAQ_questions_wrapp
+    .FAQ_questions_text
+        color #181818
+        line-height 30px
+        font-size 18px
+
+
+//аккордион----------------
+.accordion * {
+    margin: 0;
+}
+/* стили блока аккордеон */
+.accordion {
+    width:100%;
+    margin: 60px auto 50px;
+}
+/* секции аккордеона */
+.accordion .accordion_item {
+    position:relative;
+    border-top 1px solid #e1e2e5
+    border-bottom 1px solid #e1e2e5
+    margin-bottom: -1px;
+}
+/* заголовки панелей аккордеона */
+.accordion .title_block {
+    font-weight: 500;
+    font-size: 18px;
+    color: #181818;
+    cursor:pointer;
+    background: #fff;
+    padding:10px 20px 10px 0;
+    -webkit-transition:all .2s linear ;
+    -webkit-transition-delay:.2s ;
+    transition:all .2s linear ;
+    position relative;
+}
+/* переключатель панелей, положение вниз */
+.accordion .title_block:before {
+    content:'';
+    height:9px;
+    width:18px;
+    display:block;
+    background url("../img/17_FAQ/strelka_accordion.png") no-repeat
+    position:absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all .2s linear;
+    margin: auto;
+}
+/* активный переключатель, положение вверх */
+.accordion .active_block .title_block:before {
+    -ms-transform:rotate(-180deg);
+    -webkit-transform:rotate(-180deg);
+    transform:rotate(-180deg);
+    //top:18px;
+}
+.accordion .title_block:hover {
+    color #2a8bf2
+}
+
+/* заголовок активного блока  */
+.accordion .active_block .title_block {
+    color #2a8bf2
+}
+/* блоки с содержанием */
+.accordion .info {
+    display:none;
+    padding:10px 15px 45px;
+    overflow: hidden;
+    //background:#f7f7f7;
+    color #181818
+    font-size 18px
+}
+/* параграф внутри блоков с содержанием */
+.accordion .info_item {
+    margin-bottom:30px;
+}
+.accordion
+    .refinement
+        display block
+        border-left 5px solid rgb(42, 139, 242);
+        padding-left 15px
+        margin-bottom 30px
+
+.accordion
+    ol
+        padding-left 20px
+        >li
+            font-weight 500
+            margin-bottom 35px
+            span
+                font-weight 200
+            >ul
+                margin-top 10px
+                li
+                    list-style disc
+.accordion
+    ul
+        padding-left 20px
+        li
+            line-height 30px
+            font-weight 200
+
+//пагинатор--------------
+.pagination_wrapp
+    text-align center
+.pagination {
+    display: inline-block;
+}
+.pagination
+    .prev
+        border 0
+        background url("../img/17_FAQ/prev.png") center no-repeat
+        margin-right: 10px;
+        &:hover
+            background-color: #fff !important;
+    .next
+        border 0
+        background url("../img/17_FAQ/next.png") center no-repeat
+        margin-left: 10px;
+        &:hover
+            background-color: #fff !important;
+
+
+.pagination a {
+    float: left;
+    padding: 5px 0;
+    text-decoration: none;
+    transition: .4s ease;
+    font-size 18px
+    border-width: 1px;
+    border-style: solid;
+    width: 30px;
+    height: 30px;
+    border-color: rgb(221, 224, 234);
+    background-color: rgb(255, 255, 255);
+    text-align center;
+}
+
+
+.pagination a.active {
+    background-color: rgb(42, 139, 242);
+    border-color: rgb(42, 139, 242);
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: rgb(42, 139, 242);
+    //border-color: rgb(42, 139, 242);
+    color: white;
+
+}
+
+//страница результат поиска
+
+.result_item
+    margin-bottom 30px
+    >*
+        display block
+    .search_title
+        color #2a8bf2
+    .result_category
+        font-size 13px
+        color #ff0000
+    .readmore
+        color #2a8bf2
+        text-decoration underline
+
+
+.FAQ_search_wrapp
+    position relative
+    margin-bottom 50px
+    .FAQ_search
+        border-radius: 5px;
+        border: 1px solid rgb(142, 153, 186);
+        text-indent: 60px;
+        width: 880px;
+        height: 53px;
+        text-overflow: ellipsis;
+        font-family: "Graphik LC";
+        font-weight: 300;
+        placeholder font-size 20px color #181818 font-family "Graphik LC" font-weight 300
+        font-size 20px
+    .FAQ_btn_search
+        border: 0;
+        background: url(../img/03_header/img_search.png) center no-repeat;
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        left: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+
+
+

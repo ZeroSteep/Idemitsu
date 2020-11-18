@@ -1,0 +1,636 @@
+.new_order_step_wrapp
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24);
+    width: 100%;
+    min-height: 228px;
+    padding 30px 20px 10px
+    margin-bottom 20px
+    img
+        float left
+.new_order_step__header
+    >span
+        font-size 36px
+        color #67708a
+    >a
+        margin 0
+        float right
+.new_order_steps
+    height 100px
+    padding 35px 0
+    border-bottom 1px solid rgb(221, 224, 234)
+    margin-bottom: 15px;
+
+.new_order_step.active //активный шаг
+    .number_step
+        box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24);
+        color #67708a
+    span
+        color #67708a
+.new_order_step.active.passed //пройденый шаг
+    .number_step
+        box-shadow: inset 0 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+        background #7db621
+        color #fff
+    span
+        color #7db621
+
+
+.new_order_step
+    font-size 24px
+    display inline-block
+    margin-right 65px
+    span
+        color #b3bad0
+
+
+.number_step
+    border-width: 1px;
+    border-color: rgb(223, 226, 235);
+    border-style: solid;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 33px;
+    height: 33px;
+    text-align center
+    padding 3px
+    display inline-block
+    color #b3bad0
+
+.step_comment
+    //height: 50px;
+    display: table;
+    color #181818
+    //padding: 10px;
+    img
+        display table-cell
+    span
+        display table-cell
+        vertical-align middle
+        padding 0 15px
+
+.new_order_store
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24);
+    width: 667px;
+    padding 20px 0
+    margin-bottom 10px
+    transition .3s ease
+    border 1px solid transparent
+    cursor pointer
+    font-size 14px
+    display table
+    &:hover
+        box-shadow: 0 13px 18.8px 1.2px rgba(0, 82, 165, 0.24);
+        width: 667px;
+    .address_store_wrapp
+    .working_hours_store_wrapp
+        padding 0 20px
+        display table-cell
+        vertical-align top
+    .address_store_wrapp
+        border-right 1px solid rgb(221, 224, 234)
+        width 400px
+        .name_store
+            font-weight 500
+            color: #181818
+
+.new_order_store.active
+    border 1px solid rgb(125, 182, 33)
+    box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24);
+
+
+.min_card_order
+    position absolute
+    right -20px
+    top 0
+    display block
+    width: 145px;
+    //height: 440px;
+    border-width: 1px;
+    border-color: rgb(103, 112, 138);
+    border-style: solid;
+    background-color: rgb(244, 249, 254);
+    box-shadow: 0 13px 18.8px 1.2px rgba(3, 39, 75, 0.24);
+    border-bottom-right-radius 5px
+    border-top-right-radius 5px
+    .inner_min_card_order_wrapp
+        padding 15px 10px 0
+        cursor pointer
+        &:before
+            content ''
+            position absolute
+            top -1px
+            left -21px
+            display block
+            width: 20px;
+            height: 35px;
+            box-shadow: 0 13px 18.8px 1.2px rgba(3, 39, 75, 0.24);
+            border-bottom-left-radius 5px
+            border-top-left-radius 5px
+            background rgb(125, 182, 33) url("../img/14_new_order/img_arrow.png") center no-repeat
+        .order_number
+            color: #181818
+        .order_status
+            margin-top 15px
+            display block
+        .min_card_total
+            margin-top: 15px
+            span
+                &:nth-child(1)
+                    width 65px
+                    display inline-block
+                &:nth-child(2)
+                    font-size 28px
+        .block_itog
+            width 143px
+            background-color: rgb(103, 112, 138);
+            color: #fff
+            padding 10px 10px
+            position relative
+            left -10px
+
+        .car_occupancy__min_max
+            margin-top 35px
+        .scale
+            width: 100%;
+            border: 1px solid #8e99ba;
+            border-radius: 15px;
+            height: 25px;
+            margin-top: 5px;
+            padding: 4px;
+            text-align: center;
+            position: relative;
+            z-index: 0;
+            background-color #dde0ea
+            span
+                position absolute
+                left 0
+                right 0
+                margin auto
+            .red
+                border-radius: 15px;
+                height: 15px;
+                background: red;
+                width: 100%;
+            .red.green
+                background: #85ba56
+    .min_card_order__btn
+        margin 20px 0
+        padding 0 10px
+        button
+            border 0
+            width 28px
+            height 28px
+            border-radius 50%
+        .ok:disabled
+            background url("../img/14_new_order/img_ok_disabled.png") center no-repeat
+        .ok:not([disabled])
+            background url("../img/14_new_order/img_ok_confirm.png") center no-repeat
+            animation: pulse;
+            animation-duration: 1000ms;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+
+        .talk
+            background url("../img/14_new_order/img_talk.png") center no-repeat
+            margin 0 15px
+        .closed
+            background url("../img/14_new_order/img_closed.png") center no-repeat
+
+@keyframes pulse {
+    0%{
+        box-shadow 0 0 0 0 #a7ca72, 0 0 0 5px #a7ca7280
+    }
+    50%{
+        box-shadow 0 0 0 5px #a7ca72, 0 0 0 10px #a7ca7280
+    }
+    100%{
+        box-shadow 0 0 0 0 #a7ca72, 0 0 0 5px #a7ca7280
+    }
+
+}
+
+//step2
+
+.new_order_delivery
+.new_order_picup
+    border-radius: 5px;
+    background-color: #fff
+    box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24);
+    width: 471px;
+    height: 73px;
+    display inline-block
+    margin-bottom 15px
+    padding: 30px 20px;
+    font-size 18px
+    font-weight 500
+    margin-right 10px
+    transition .3s ease
+    border 1px solid transparent
+    cursor:  pointer
+    &:hover
+        box-shadow: 0 13px 18.8px 1.2px rgba(0, 82, 165, 0.24);
+.new_order_delivery.active
+.new_order_picup.active
+        border 1px solid rgb(125, 182, 33)
+        box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24);
+
+.select_store
+    display none
+.select_store__text
+    margin 15px 0
+    color #181818
+
+//    step3
+.content_wrapp
+    position relative
+
+#step3_category
+    width 226px
+    display inline-block
+    float left
+    background #fff
+    color: #181818
+.step3_category__header
+    font-weight 500
+    padding 10px
+
+#step3_category
+    ul
+        padding 0
+        margin 0
+        li
+            width 100%
+            list-style none
+            height 30px
+            display table
+            transition .4s ease
+            position relative
+            padding 0 10px
+            a
+                display table-cell
+                padding-left 40px
+                font-size 13px
+                vertical-align middle
+                text-align left
+                transition .4s ease
+                img
+                    position absolute
+                    left 10px
+                    transition: .4s ease;
+                    opacity 1
+
+                img.img_hover
+                    opacity 0
+            &:hover
+                background rgb(244, 249, 254);
+                a
+                    color #fa6239
+                    img
+                        opacity 0
+                    img.img_hover
+                        opacity 1
+#step3_category
+    ul
+        li.active
+            background rgb(244, 249, 254);
+            a
+                color #fa6239
+                img.img_hover
+                    opacity 1
+                img
+                    opacity 0
+
+#step3_category
+    label
+        display block
+        margin: 14px 0 0 10px;
+    hr
+        border: none; /* Убираем границу для браузера Firefox */
+        color: #dde0ea; /* Цвет линии для остальных браузеров */
+        background-color: #dde0ea; /* Цвет линии для браузера Firefox и Opera */
+        height: 1px; /* Толщина линии */
+        margin 10px
+    button
+        border 0
+        color #2a8bf2
+        background 0 0
+        padding 0 0 20px 10px
+    .reset
+        color #c84f2e
+
+.header_search_new_order
+    display inline-block
+    width calc(100% - 380px)
+    padding: 0 10px;
+    margin 0 10px
+    background #fff
+    box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24);
+    height 50px
+    form#sort_product
+        float right
+        .documents__list_filter_item.floatRight
+            margin 10px 30px 0
+    form#search_new_order
+        position relative
+        height: 45px;
+        padding 10px 0
+        float left
+        width 45%
+        input.search__new_order
+            border 0
+            border-bottom 1px solid #e1e2e5
+            text-indent 30px
+            width 100%
+            max-width 545px
+            placeholder font-size 15px color #8e99ba font-family "Graphik LC" font-weight 300
+            height 30px
+            text-overflow: ellipsis;
+            font-family: "Graphik LC";
+            font-weight: 300;
+        input.btn_search
+            background url("../img/14_new_order/search.png") center no-repeat
+            width: 20px;
+            height: 20px;
+        .documents__list_filter_item
+            margin 0 30px
+    .header__search_result__new_order
+        width 545px
+        top 40px
+
+
+
+.product_list_wrapp
+    background #fff
+    width calc(100% - 380px)
+    margin 0 10px
+    margin-top 10px
+    display inline-block
+    //min-height 491px
+    .product_list__header
+        font-size 24px
+        font-weight 500
+        padding 25px 20px 20px
+    .product_list__stub
+        text-align center
+        margin 150px 0
+        display none
+        span
+            display block
+            text-align center
+            font-size 18px
+            line-height: 1.7
+            a
+                color #2a8bf2
+
+
+
+.product_list_table
+    width 100%
+    background #fff
+    box-shadow: 0 3px 4.7px 0.3px rgba(3, 39, 75, 0.24)
+    border-radius: 5px
+    .product_list_table__header
+        background rgb(244, 249, 254)
+        height 45px
+        width 100%
+        display table
+        color: #67708a
+        >span
+            display inline-block
+            float left
+            border-right 1px solid rgb(221, 224, 234)
+            padding 10px
+            //height 100%
+            font-size 13px
+            height inherit
+            &:nth-child(1)
+                width 10%
+            &:nth-child(2)
+                width 19%
+            &:nth-child(3)
+                width 10%
+            &:nth-child(4)
+                width 7%
+            &:nth-child(5)
+                width 7%
+            &:nth-child(6)
+                width 9%
+            &:nth-child(7)
+                width 12%
+            &:nth-child(8)
+                width 11%
+            &:nth-child(9)
+                width 11%
+            &:last-child
+                width 4%
+                border-right 0
+
+.product_list_table_item_hover
+    display: block;
+    transition: .4s ease;
+    &:hover
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 7px 18.8px 1.2px rgba(0,82,165,.18);
+        transform: scale(1.01,1.02);
+.product_list_table_item
+    color #181818
+    //display table
+    width 100%
+    height 50px
+    border-bottom 1px solid rgb(221, 224, 234)
+    .product_link_in_list
+        color #2a8bf2
+        &:hover
+            text-decoration underline
+    >span
+        //display inline-block
+        float left
+        padding 17px 10px
+        border-right 1px solid rgb(221, 224, 234)
+        font-size 14px
+        height inherit
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        &:nth-child(1)
+            width 10%
+        &:nth-child(2)
+            width 19%
+        &:nth-child(3)
+            width 10%
+        &:nth-child(4)
+            width 7%
+        &:nth-child(5)
+            width 7%
+        &:nth-child(6)
+            width 9%
+        &:nth-child(7)
+            width 12%
+        &:nth-child(8)
+            width 11%
+        &:nth-child(9)
+            width 11%
+        &:last-child
+            //width 4%
+            border-right 0
+            text-align center
+            float right
+        .product_list_transition
+            background url("../img/14_new_order/img_product_list_add.png") no-repeat
+            width 20px
+            height 20px
+            display inline-block
+        .product_list_add
+            background url("../img/14_new_order/img_product_list_transition.png") no-repeat
+
+.product_list_table_wrapp
+    padding-bottom 20px
+
+
+.modal_add_product_list
+    position fixed
+    margin auto
+    top: 0
+    bottom 0
+    left 0
+    right 0
+    width: 374px;
+    height: 336px;
+    display none
+    background #fff
+    box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    z-index 1000
+    .modal_add_product_list__header
+        font-size 24px
+        font-weight 500
+        padding 25px 25px 20px
+        border-bottom 1px solid #dde0ea;
+    .modal_add_product_list__quantity_add
+    .modal_add_product_list__quantity_remainder
+        height 80px
+        display block
+        width 100%
+        border-bottom 1px solid #dde0ea;
+        padding: 20px 40px;
+        input
+            width 100px
+            border-radius: 5px;
+            position relative
+            height 41px
+            border 1px solid #dde0ea;
+            text-indent 15px
+            color #181818
+        button
+            position absolute
+            border 0
+            background-color: rgb(244, 249, 254);
+        .up
+            right 40px
+            width: 28px;
+            top: 93px
+            height: 21px;
+            border-top-right-radius 5px
+            border-left 2px solid #dde0ea;
+            border-bottom 1px solid #dde0ea;
+            border-top 1px solid #dde0ea;
+            background url("../img/14_new_order/img_up.png") center no-repeat
+        .down
+            right: 40px;
+            top: 114px;
+            width: 28px;
+            height: 19px;
+            border-bottom-right-radius 5px
+            border-left 2px solid #dde0ea;
+            background url("../img/14_new_order/img_down.png") center no-repeat
+    span
+            width 145px
+            display inline-block
+            font-size 14px
+            float: left;
+            height: 41px;
+            padding-top: 6px;
+            margin-right: 48px;
+    .confirm
+    .cancel
+        border-radius: 20px;
+        height: 40px;
+        color: #fff;
+        transition: .4s ease;
+        padding: 10px 18px;
+        font-weight: 500;
+        font-family: "Graphik LC";
+        border 0
+    .confirm
+        background #8ac722
+        margin: 32px 20px 0 45px;
+    .cancel
+        background #b3bad0
+
+.modal_add_product_list__quantity_remainder
+    >input
+        background rgb(244, 249, 254);
+        text-align center
+        text-indent 0 !important
+
+.product_wrapp
+    width 91%
+    background #fff
+    box-shadow: 0px 3px 4.7px 0.3px rgba(3, 39, 75, 0.24);
+    border-radius: 5px;
+    .product__header
+        font-size 24px
+        font-weight 500
+        padding 30px 20px
+        color #67708a
+    .product_characteristic
+        display inline-block
+        //width 425px
+        padding 0 50px 0 20px;
+        margin-right 50px
+        border-right 1px solid #dde0ea;
+        span
+            display block
+            font-size 18px
+            line-height 30px
+            span
+                &:first-child
+                    width 235px
+                    display inline-block
+                &:last-child
+                    width 150px
+                    display inline-block
+                    color #181818
+        &:last-child
+            float right
+            border 0
+
+    .confirm
+    .return
+        border-radius: 20px;
+        height: 40px;
+        color: #fff;
+        transition: .4s ease;
+        padding: 10px 18px;
+        font-weight: 500;
+        font-family: "Graphik LC";
+        border 0
+        margin 30px 0 30px 20px
+    .confirm
+        background #8ac722
+    .return
+        background #2a8bf2
+        padding: 12.5px 18px;
+    .block_btn
+        text-align: right;
+        padding: 0 30px;
+
+.min_card_order.fixed
+    position fixed
+    top 0
+    right 0

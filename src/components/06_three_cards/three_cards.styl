@@ -1,0 +1,109 @@
+.three_cards_wrapp
+    display table
+    width 100%
+    .three_cards__active_orders
+    .three_cards__unpaid_bills
+    .three_cards__done
+        //width: 290px;
+        width calc((100% - 14px) / 3);
+        height: 150px;
+        //box-shadow: 0px 13px 18.8px 1.2px rgba(0, 82, 165, 0.24);
+        box-shadow: 0 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+        border-radius: 7px;
+        margin-right 7px
+        float left
+        a
+            display block
+            width 100%
+            height 100%
+            transition .4s ease
+            background #fff
+            border-radius 7px
+            background -moz-linear-gradient( 0deg, rgb(226,92,35) 0%, rgb(223,3,38) 100%);
+            background -webkit-linear-gradient( 0deg, rgb(226,92,35) 0%, rgb(223,3,38) 100%);
+            background -ms-linear-gradient( 0deg, rgb(226,92,35) 0%, rgb(223,3,38) 100%);
+            background -o-linear-gradient( 0deg, rgb(226,92,35) 0%, rgb(223,3,38) 100%);
+            background linear-gradient( 0deg, rgb(226,92,35) 0%, rgb(223,3,38) 100%);
+            border 1px solid #fff
+            >span
+                background #fff
+                display block
+                width 100%
+                height 100%
+                padding 23px 20px
+                border-radius 5px
+                .active_orders__header
+                .unpaid_bills__header
+                .done__header
+                    color #181818
+            &:hover
+                border 1px solid transparent
+                .active_orders__header
+                .unpaid_bills__header
+                .done__header
+                    color #df0326
+                    span
+                        color #df0326
+
+    >.three_cards__done
+        margin-right 0
+        position relative
+
+.active_orders__header
+.unpaid_bills__header
+.done__header
+    display inline-block
+    margin-bottom 25px
+    font-size 18px
+    transition .4s ease
+
+.sum
+.including_taxes
+.taxes
+    display table
+    font-size 15px
+    width 100%
+    margin-bottom: 4px
+    >span
+        width 50%
+        display table-cell
+        color #181818
+.sum
+    color #181818
+//Настройка календаря
+
+.month-year-input
+    //visibility hidden
+    //width 100px
+    position absolute
+    right 50px
+    top 25px
+    border 0
+    color #181818
+    cursor default
+span#MonthPicker_Button_IconDemo
+    background: url(../img/06_three_cards/calendar.png) no-repeat;
+    width: 22px;
+    height: 22px;
+    border: 0;
+    border-radius 0
+    transition .3s ease
+    position absolute
+    top: 20px;
+    right: 20px;
+    &:hover
+        background: url(../img/06_three_cards/calendar_hover.png) no-repeat;
+
+a.ui-button.ui-widget.ui-corner-all.ui-button-icon-only
+    cursor pointer !important
+
+.ui-icon-calculator
+    background url("../img/06_three_cards/icon.gif") no-repeat
+    display inline-block
+    width 15px
+    height 15px
+.month-picker-year-table .month-picker-title .ui-button
+    >span
+        padding 0!important
+
+
