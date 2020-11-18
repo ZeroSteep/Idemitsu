@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loaded" lang="en" id="full">
+
+    <head>
+
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,user-scalable=yes">
+
+        <title>New-project</title>
+
+        <link href="jquery.fit_modal.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+
+        <button class="btn__demo_0" data-content_block=".content__wrap_1">
+            Open modal №1
+        </button>
+
+        <button class="btn__demo_0_1" data-content_block=".content__wrap_2">
+            Open modal №2
+        </button>
+
+        <!--content block-->
+        <div class="modal__frame">
+            <div class="modal__window">
+                <div class="modal__window__header">
+                    <div class="modal__window__close"></div>
+                    <div class="modal__window__title"></div>
+                </div>
+                <div class="modal__window__body">
+                    <div class="content__wrap_1">Hallo world!</div>
+                    <div class="content__wrap_2">I'm alive!</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="jquery.js"></script>
+        <script src="jquery.fit_modal.js"></script>
+
+        <!--Plugin init-->
+        <script>
+            $(window).ready(function () {
+                $('.btn__demo_0').fit_modal({
+                    fast_create : false,
+                    window_animation_type   : 'zoom_in',
+                    frame_animation_speed   :  300,
+                    modal_title  :  'Modal 1!',
+                    fix_fw_el : '.header',
+                    fix_right_el : '.events__block',
+                });
+
+                $('.btn__demo_0_1').fit_modal({
+                    fast_create : false,
+                    modal_title  :  "Modal 2!",
+                    fix_fw_el : '.header',
+                    fix_right_el : '.events__block',
+                });
+            });
+        </script>
+    </body>
+</html>
